@@ -16,9 +16,6 @@ return new class extends Migration
         Schema::create('members', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('tour_id')->nullable(); // Ref tours.id
-            $table->unsignedBigInteger('institution_id')->nullable(); // Ref institutions.id
-            $table->unsignedBigInteger('rechnungsempfänger_id')->nullable(); // Ref institutions.id
-            $table->unsignedBigInteger('rechnungskontakt')->nullable(); // Ref persons.id
 
             $table->foreign('tour_id')
                   ->references('id')
