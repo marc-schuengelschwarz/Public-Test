@@ -19,8 +19,6 @@ return new class extends Migration
             $table->unsignedBigInteger('institution_id')->nullable(); // Ref institutions.id
             $table->unsignedBigInteger('rechnungsempfänger_id')->nullable(); // Ref institutions.id
             $table->unsignedBigInteger('rechnungskontakt')->nullable(); // Ref persons.id
-            $table->text('notiz')->nullable();
-            $table->timestamps();
 
             $table->foreign('tour_id')
                   ->references('id')
