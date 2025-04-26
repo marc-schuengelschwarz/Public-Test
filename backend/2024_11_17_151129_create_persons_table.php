@@ -18,8 +18,6 @@ return new class extends Migration
             $table->string('vorname');
             $table->string('nachname');
             $table->string('titel')->nullable();
-            $table->string('job_bezeichnung')->nullable();
-            $table->unsignedBigInteger('institution')->nullable(); // Ref institutions.id
  
         });                
     }
